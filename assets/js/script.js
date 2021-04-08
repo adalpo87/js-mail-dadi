@@ -28,3 +28,39 @@ if (email_presente) {
 }else{
   document.getElementById('log_email').innerHTML = "La tua email " + request + " non è presente nei nostri database"
 }
+
+
+
+
+
+//ESERCIZIO GIOCO DEI DADI
+
+// PROMPT CON INSERIMENTO NOME GIOCATORE 
+var player = prompt ('Come ti chiami?');
+
+
+
+// MATH RANDOM CHE CREA UN UN NUMERO RANDOM DA 1 A 6
+var dado_x = ((Math.random() * 5) + 1).toFixed(0);
+
+// MATH RANDOM DA ASSEGNARE AL BOT
+var dado_y = ((Math.random() * 5) + 1).toFixed(0);
+
+var risultato = "";
+
+//CREARE IF CON X > Y VINCE
+if ( dado_x > dado_y){
+  risultato = "Complimenti hai vinto."
+}
+// IF ELSE X < Y PERDE
+if (dado_x < dado_y) {
+  risultato = "Mi dispiace hai perso."
+} else {
+  risultato = "E' un pareggio"
+}
+
+document.getElementById('card').innerHTML = "Ciao " + player + ", il tuo numero è " + dado_x ;
+
+document.getElementById('card2').innerHTML = risultato + " Il tuo avversario ha ottenuto un punteggio di " + dado_y + ".";
+
+
