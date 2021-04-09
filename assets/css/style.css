@@ -75,3 +75,8 @@ footer{
 footer h4{
   color: aliceblue;
 }
+
+#card2{
+  padding: 0 30px;
+  text-align: center;
+}
