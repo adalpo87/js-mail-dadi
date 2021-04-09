@@ -41,10 +41,10 @@ var player = prompt ('Come ti chiami?');
 
 
 // MATH RANDOM CHE CREA UN UN NUMERO RANDOM DA 1 A 6
-var dado_x = ((Math.random() * 5) + 1).toFixed(0);
+var dado_x = Math.floor(Math.random() * 6) + 1;
 
 // MATH RANDOM DA ASSEGNARE AL BOT
-var dado_y = ((Math.random() * 5) + 1).toFixed(0);
+var dado_y = Math.floor(Math.random() * 6) + 1;
 
 var risultato = "";
 
